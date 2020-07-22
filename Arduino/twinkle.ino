@@ -11,7 +11,7 @@ unsigned int frequencies[] = {262,294,330,349,392,440,494};
 const byte noteCount = sizeof(noteNames); // number of notes (7 here)
 
 //notes, a space represents a rest
-char score[] = "CCGGaaGFFEEDDC GGFFEEDGGFFEED CCGGaaGFFEEDDC ";  
+char score[] = "CCGGaaG FFEEDDC GGFFEED GGFFEED CCGGaaG FFEEDDC ";  
 const byte scoreLen = sizeof(score); // the number of notes in the score
 
 void setup()
@@ -42,6 +42,3 @@ void playNote(char note, int duration)
   // if there is no match then the note is a rest, so just do the delay
   delay(duration);
 }
-
-
-
